@@ -5,152 +5,143 @@
 }
 
 body {
+  padding: 40px 20px;
+
   background: #f5f7fa;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-right: 20px;
+
   font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .wrapper {
   display: flex;
   width: 1150px;
+
   margin-left: auto;
   margin-right: auto;
+
   background: #dfdde0;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar {
-  background: #373737;
   width: 370px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+
+  padding: 40px 0;
+
+  background: #373737;
 }
 
 .my-photo {
   width: 370px;
 }
 
-.about-me-contaner {
+.about-me-container {
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-right: 60px;
   padding-left: 90px;
-  padding-right: 90px;
+  padding-bottom: 110px;
 }
 
 .contacts-container {
-  margin-left: 40px;
   margin-top: 60px;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
 .contacts-title {
+  margin-bottom: 20px;
+
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  color: #fff;
-  margin-bottom: 20px;
 }
 .contacts-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   color: #ffffff;
 }
-.contacta-title-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #fff;
+.contact-title-link {
   margin-right: 10px;
+
+  color: #fff;
 }
 
-.tehc-skills-title {
+.tech-skills-title {
+  margin-bottom: 20px;
+
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 20px;
 }
 
 .Tech-shills-container {
   margin-left: 40px;
   margin-top: 55px;
   margin-right: 40px;
+
   color: #fff;
 }
-.tehc-skills-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #ff6b08;
+.tech-skills-item {
   margin-left: 20px;
+
+  color: #ff6b08;
 }
-.tehc-skills-text {
+.tech-skills-text {
   color: #fff;
 }
 
 .Soft-Skills {
+  margin: 30px 40px 20px;
+
   color: #fff;
-  margin-left: 40px;
-  margin-top: 30px;
-  margin-right: 40px;
-  margin-bottom: 20px;
 }
 
 .Soft-Skills-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #ff6b08;
   margin-left: 60px;
+
+  color: #ff6b08;
 }
+
 .Soft-skills-text {
   color: #fff;
 }
+
 .profession {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 23;
 }
+
 .name {
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
 }
-.descripyion {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
+
 .info-container {
-  margin-bottom: 65px;
   width: 413px;
+
+  margin-bottom: 65px;
 }
+
 .projects-title {
+  margin-bottom: 12px;
+
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 12px;
 }
+
 .projects-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   color: #595959;
 }
-.tech-name {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
+
 .dots {
-  min-width: 30px;
   flex: 1 0;
-  border-bottom: 1px dotted #bebebe;
+  min-width: 10px;
+
   margin: 0 0.4em;
+  border-bottom: 1px dotted #bebebe;
   font-weight: 100;
 }
 
@@ -161,57 +152,53 @@ body {
   margin-bottom: 55px;
 }
 .profession-title {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
   margin-top: 10px;
   margin-bottom: 15px;
+
+  font-size: 16px;
+  font-weight: 700;
 }
 .projects-item {
   display: flex;
   justify-content: space-between;
 }
-.profession-company {
-  /* color: #ff6b08; */
-}
+
 .profession-time {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
   color: #a8a8a8;
+  font-size: 12px;
+  line-height: 24px;
 }
+
 .profession-divider {
   color: #000000;
 }
+
 .profession-duties {
   margin-top: 14px;
   margin-bottom: 30px;
 }
+
 .profession-duties-item {
   color: #595959;
-  font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
 }
+
 .education {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 20px;
   margin-top: 55px;
+
+  font-size: 22px;
+  font-weight: 700;
 }
+
 .university {
-  /* color: #ff6b08; */
-  font-family: Montserrat;
+  margin-bottom: 15px;
+
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 15px;
 }
 .university-management {
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
   margin-bottom: 15px;
 }
