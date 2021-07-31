@@ -1,125 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My resume</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
+
 <body>
-   <!-- main container-->
+    <!-- main container-->
     <div class="wrapper">
         <aside class="sidebar">
-            <img class="my-photo" src="./img/DSC_0009.jpg" alt="My photo">
+            <img class="sidebar-photo" src="./img/me.jpg" alt="My photo">
 
             <!--contacts container-->
-            <div class="contacts-container">
-                <h3 class="contacts-title">Contacts</h3>
-                <div>
-                    <span class="contact-title-link" >C:</span> <a class="contacts-link" href="tel:380970609129">+380970609129</a></div>
-                <div>
-                    <span class="contact-title-link">E:</span> <a class="contacts-link" href="mailto:maxim.n1@i.ua">maxim.n1@i.ua</a></div>
+            <div class="sidebar-container">
+                <h3 class="sidebar-title">Contacts</h3>
+                <ul class="contacts-container">
+                    <li>
+                        <a class="sidebar-link" href="https://www.linkedin.com/in/maksym-ibraiev-6620a2200/">
+                            <svg class="contacts-icon">
+                                <use href="./img/icons.svg#linkedin"></use>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li >
+                        <a class="sidebar-link" href="https://github.com/Maxim-Ibraiev/">
+                            <svg class="contacts-icon">
+                                <use href="./img/icons.svg#github"></use>
+                            </svg>
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@48.7846332,33.2261493,6.75z/data=!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234">
+                            <svg class="contacts-icon">
+                                <use href="./img/icons.svg#location"></use>
+                            </svg> 
+                            Kyiv
+                        </a>
+                    </li>
+                </ul>
             </div>
-        
 
             <!--Tech shills container-->
-            <div class="Tech-shills-container">
-                <h3 class="tech-skills-title">Tech Skills</h3>
+            <div class="sidebar-container">
+                <h3 class="sidebar-title">Tech Skills</h3>
                 <ul>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">React.js</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">Next.js</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">Redux</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">Node.js</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">JavaScript</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">SASS</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">CSS3</span></li> 
-                    <li class="tech-skills-item"> <span class="tech-skills-text">HTML5</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">GIT</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">React Transition Group</span></li>
-                    <li class="tech-skills-item"> <span class="tech-skills-text">WebPack (Basic)</span></li>
+                    <li class="skills-item"> <span class="skills-text">React.js</span></li>
+                    <li class="skills-item"> <span class="skills-text">Next.js</span></li>
+                    <li class="skills-item"> <span class="skills-text">Redux</span></li>
+                    <li class="skills-item"> <span class="skills-text">Node.js</span></li>
+                    <li class="skills-item"> <span class="skills-text">JavaScript</span></li>
+                    <li class="skills-item"> <span class="skills-text">SASS</span></li>
+                    <li class="skills-item"> <span class="skills-text">CSS3</span></li>
+                    <li class="skills-item"> <span class="skills-text">HTML5</span></li>
+                    <li class="skills-item"> <span class="skills-text">GIT</span></li>
+                    <li class="skills-item"> <span class="skills-text">React Transition Group</span></li>
+                    <li class="skills-item"> <span class="skills-text">WebPack (Basic)</span></li>
+                    <li class="skills-item"> <span class="skills-text">Scrum</span></li>
+                    <li class="skills-item"> <span class="skills-text">Agile</span></li>
+                    <li class="skills-item"> <span class="skills-text">GTD</span></li>
                 </ul>
 
             </div>
 
             <!--Soft Skills-->
-            <div>
-                <h3 class="Soft-Skills">Soft Skills</h3>
+            <div class="sidebar-container">
+                <h3 class="sidebar-title">Soft Skills</h3>
                 <ul>
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">Scrum</spen></li>
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">Agile</spen></li> 
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">GTD</spen></li>
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">Teamwork</spen></li>
+                    <li class="skills-item">
+                        <span class="skills-text">Teamwork</span>
+                    </li>
+                    <li class="skills-item">
+                        <span class="skills-text">Proactivity</span>
+                    </li>
+                    <li class="skills-item">
+                        <span class="skills-text">Time management</span>
+                    </li>
+                    <li class="skills-item">
+                        <span class="skills-text">Stress tolerance</span>
+                    </li>
                 </ul>
 
             </div>
 
             <!--Soft Skills-->
-            <div>
-                <h3 class="Soft-Skills">Languages</h3>
+            <div class="sidebar-container">
+                <h3 class="sidebar-title">Languages</h3>
                 <ul>
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">Russian - Native speaker</spen></li>
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">Ukrainian - Fluent</spen></li> 
-                    <li class="Soft-Skills-item"> <spen class="Soft-skills-text">English - B1</spen></li>
+                    <li class="skills-item">
+                        <span class="skills-text">Russian - Native speaker</span>
+                    </li>
+                    <li class="skills-item">
+                        <span class="skills-text">Ukrainian - Fluent</span>
+                    </li>
+                    <li class="skills-item">
+                        <span class="skills-text">English - Pre-Intermediate</span>
+                    </li>
                 </ul>
 
             </div>
         </aside>
         <!--about container-->
-         <div class="about-me-container">
-             <!--about me main info -->
-             <div class="info-container">
+        <div class="about-me-container">
+            <!--about me main info -->
+            <div class="info-container">
                 <h2 class="profession">Front-end Developer</h2>
                 <h1 class="name">Maksym Ibraiev</h1>
 
-                <p >I am a result oriented web developer with the ability to learn quickly. I have one year of coding experience.</p>
+                <p>I'm a result oriented web developer with the ability to learn quickly. I'm always keen on change - for better, faster and simpler. When I'm not paying attention, my mind is always trying to fix things and make them work better.</p>
             </div>
-            
-           
+
+
             <!--Project container-->
             <div class="project-containet">
                 <h3 class="about-me-title">Projects</h3>
 
-                <ol>
+                <ol class="projects">
                     <li>
                         <span class="projects-item">
                             <a class="projects-link"
-                            href="https://project-go-it.netlify.app/">https://project-go-it.netlify.app/</a>
+                                href="https://project-go-it.netlify.app/">Questify</a>
                             <span class="dots"></span>
-                            <span ><b>[</b> React.js, Redux, Node.js<b>]</b></span>
-                        </span> 
+                            <span><b>[</b> React.js, Redux, Node.js<b>]</b></span>
+                            <a href="https://github.com/sem-aa/dashboard-project5-front-end" class="projects-code">
+                                <svg class="projects-icon">
+                                    <use href="./img/icons.svg#code"></use>
+                                </svg>
+                            </a>
+                        </span>
                     </li>
                     <li>
                         <span class="projects-item">
                             <a class="projects-link"
-                            href="https://github.com/Maxim-Ibraiev/goit-react-hw-09-phonebook">https://github.com/Maxim-Ibraiev/goit-react-hw-09-phonebook</a>
+                                href="https://goit-react-hw-09-phonebook-mi.netlify.app/contacts">Phonebook</a>
                             <span class="dots"></span>
-                            <span ><b>[</b> React.js, Redux <b>]</b></span>
-                        </span> 
+                            <span><b>[</b> React.js, Redux <b>]</b></span>
+                            <a href="https://github.com/Maxim-Ibraiev/goit-react-hw-09-phonebook" class="projects-code">
+                                <svg class="projects-icon">
+                                    <use href="./img/icons.svg#code"></use>
+                                </svg>
+                            </a>
+                        </span>
                     </li>
                     <li>
                         <span class="projects-item">
                             <a class="projects-link"
-                            href="https://goit-react-hw-04-movies-imy.netlify.app/">https://goit-react-hw-04-movies-imy.netlify.app/</a>
+                                href="https://maxim-ibraiev.github.io/parcel-project-template/">BarberShop</a>
                             <span class="dots"></span>
-                            <span ><b>[</b> React.js <b>]</b></span>
-                        </span> 
+                            <span> <b>[</b> HTML5, CSS3, Teamwork <b>]</b> </span>
+                            <a href="https://github.com/Maxim-Ibraiev/parcel-project-template" class="projects-code">
+                                <svg class="projects-icon">
+                                    <use href="./img/icons.svg#code"></use>
+                                </svg>
+                            </a>
+                        </span>
                     </li>
-                     <li>
-                         <span class="projects-item">
-                             <a class="projects-link"
-                             href="https://github.com/Maxim-Ibraiev/parcel-project-template">https://github.com/Maxim-Ibraiev/parcel-project-template</a>
-                             <span class="dots"></span>
-                             <span > <b>[</b> HTML5, CSS3, Teamwork <b>]</b> </span>
-                            </span> 
-                    </li> 
                     <li>
                         <span class="projects-item">
                             <a class="projects-link"
-                            href="https://github.com/Maxim-Ibraiev/project-olx">https://github.com/Maxim-Ibraiev/project-olx</a>
+                                href="https://goit-react-hw-04-movies-imy.netlify.app/">Movies</a>
                             <span class="dots"></span>
-                            <span ><b>[</b> JavaScript, Teamwork <b>]</b></span>
-                        </span> 
+                            <span><b>[</b> React.js <b>]</b></span>
+                            <a href="https://github.com/Maxim-Ibraiev/goit-react-hw-04-movies" class="projects-code">
+                                <svg class="projects-icon">
+                                    <use href="./img/icons.svg#code"></use>
+                                </svg>
+                            </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="projects-item">
+                            <a class="projects-link"
+                                href="https://maxim-ibraiev.github.io/project-olx/">project-olx
+                            </a>
+                            <span class="dots"></span>
+                            <span><b>[</b> JavaScript, Teamwork <b>]</b></span>
+                            <a href="https://github.com/Maxim-Ibraiev/project-olx" class="projects-code">
+                                <svg class="projects-icon">
+                                    <use href="./img/icons.svg#code"></use>
+                                </svg>
+                            </a>
+                        </span>
                     </li>
                 </ol>
             </div>
@@ -127,9 +196,9 @@
             <div>
                 <h3 class="about-me-title">Work Experience</h3>
 
-                 <!-- company 1-->
+                <!-- company 1-->
                 <div>
-                    <h4 class="profession-title"> CDMC <span>Regional Manager</span> </h4>
+                    <h4 class="profession-title"> CDMC &#8212; Regional Manager </h4>
                     <span class="profession-time">
                         August 2017 - July 2021 <span class="profession-divider">|</span> DR Congo
                     </span>
@@ -139,34 +208,38 @@
                         <li class="profession-duties-item">Spectral analysis</li>
                         <li class="profession-duties-item">Finance control</li>
                     </ul>
-                    </div>
+                </div>
 
                 <!-- Education -->
                 <h3 class="education">Education</h3>
                 <div>
-                    <h4 class="university ">GoIT</h4>
-                    <h5 class="university-management">Frontend Full Stack</h5>
+                    <h4 class="university ">GoIT &#8212; Frontend Full Stack</h4>
+                    <!-- <h5 class="university-management">Frontend Full Stack</h5> -->
                     <span class="profession-time">
                         May 2020 - July 2021 <span class="profession-divider">|</span> Ukraine
-                    
-                    <ul class="profession-duties">
-                        <li class="profession-duties-item">React.js</li>
-                        <li class="profession-duties-item">Redux</li>
-                        <li class="profession-duties-item">Node.js</li>
-                        <li class="profession-duties-item">JavaScript</li>
-                        <li class="profession-duties-item">HTML / CSS</li>
-                    </ul>
+
+                        <!-- <ul class="profession-duties">
+                            <li class="profession-duties-item">React.js</li>
+                            <li class="profession-duties-item">Redux</li>
+                            <li class="profession-duties-item">Node.js</li>
+                            <li class="profession-duties-item">JavaScript</li>
+                            <li class="profession-duties-item">HTML / CSS</li>
+                        </ul> -->
                 </div>
                 <div>
-                    <h4 class="university ">Kryvyi Rih National University</h4>
-                    <h5 class="university-management">Program Subject Area Foundry</h5>
+                    <h4 class="university ">Kryvyi Rih National University &#8212; Program Subject Area Foundry</h4>
+                    <!-- <h5 class="university-management">Program Subject Area Foundry</h5> -->
                     <span class="profession-time">
-                        September 2014 - June 2018 <span class="profession-divider">|</span> Ukraine
-                    
+                        September 2014 - June 2018 <span class="profession-divider">|</span> Ukraine </span>
+
                 </div>
             </div>
         </div>
     </div>
 
 </body>
+<script>
+    window.addEventListener("beforeprint",  function () { document.body.style.paddingTop = '0px' })
+    window.addEventListener("afterprint",   function () { document.body.style.paddingTop = '30px'})
+</script>
 </html>

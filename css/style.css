@@ -1,16 +1,18 @@
+/* basic */
+
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  padding: 40px 20px;
+  padding-top: 30px;
+  margin: 0;
 
   background: #f5f7fa;
 
-  font-family: Montserrat;
-  font-size: 14px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -18,6 +20,7 @@ body {
 .wrapper {
   display: flex;
   width: 1150px;
+  height: 1485px;
 
   margin-left: auto;
   margin-right: auto;
@@ -26,19 +29,32 @@ body {
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
-.sidebar {
-  width: 370px;
+/* sidebar */
 
-  padding: 40px 0;
+.sidebar {
+  width: 35%;
+
+  padding-top: 40px;
 
   background: #373737;
+  color: #fff;
 }
 
-.my-photo {
-  width: 370px;
+.sidebar-container {
+  margin-left: 10px;
+  margin-top: 55px;
+  margin-right: 5px;
+
+  color: #fff;
+}
+
+.sidebar-photo {
+  width: 100%;
 }
 
 .about-me-container {
+  width: 100%;
+
   padding-top: 110px;
   padding-right: 60px;
   padding-left: 90px;
@@ -46,29 +62,34 @@ body {
 }
 
 .contacts-container {
-  margin-top: 60px;
-  margin-right: 40px;
-  margin-left: 40px;
+  padding-left: 20px;
+  list-style: none;
 }
 
-.contacts-title {
+.contacts-container > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-icon {
+  height: 1rem;
+  width: 20px;
+
+  fill: #fff;
+}
+
+.sidebar-title {
   margin-bottom: 20px;
 
-  color: #fff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
 }
-.contacts-link {
+
+.sidebar-link {
   color: #ffffff;
 }
-.contact-title-link {
-  margin-right: 10px;
 
-  color: #fff;
-}
-
-.tech-skills-title {
+.skills-title {
   margin-bottom: 20px;
 
   font-size: 22px;
@@ -76,37 +97,15 @@ body {
   line-height: 24px;
 }
 
-.Tech-shills-container {
-  margin-left: 40px;
-  margin-top: 55px;
-  margin-right: 40px;
-
-  color: #fff;
-}
-.tech-skills-item {
-  margin-left: 20px;
-
-  color: #ff6b08;
-}
-.tech-skills-text {
-  color: #fff;
-}
-
-.Soft-Skills {
-  margin: 30px 40px 20px;
-
-  color: #fff;
-}
-
-.Soft-Skills-item {
-  margin-left: 60px;
-
+.skills-item {
   color: #ff6b08;
 }
 
-.Soft-skills-text {
+.skills-text {
   color: #fff;
 }
+
+/* main */
 
 .profession {
   margin-bottom: 23;
@@ -119,9 +118,11 @@ body {
 }
 
 .info-container {
-  width: 413px;
-
   margin-bottom: 65px;
+}
+
+.projects > * {
+  margin-top: 5px;
 }
 
 .projects-title {
@@ -136,6 +137,22 @@ body {
   color: #595959;
 }
 
+.projects-code {
+  height: 1.5rem;
+
+  margin-left: 10px;
+}
+
+.projects-icon {
+  width: 30px;
+  height: inherit;
+
+  padding-left: 3px;
+  padding-right: 3px;
+
+  border: 1px solid #595959;
+}
+
 .dots {
   flex: 1 0;
   min-width: 10px;
@@ -148,9 +165,11 @@ body {
 .about-me-title {
   font-weight: 700;
 }
+
 .project-containet {
   margin-bottom: 55px;
 }
+
 .profession-title {
   margin-top: 10px;
   margin-bottom: 15px;
@@ -158,6 +177,7 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
+
 .projects-item {
   display: flex;
   justify-content: space-between;
@@ -165,8 +185,6 @@ body {
 
 .profession-time {
   color: #a8a8a8;
-  font-size: 12px;
-  line-height: 24px;
 }
 
 .profession-divider {
@@ -180,7 +198,6 @@ body {
 
 .profession-duties-item {
   color: #595959;
-  font-size: 14px;
 }
 
 .education {
@@ -192,11 +209,13 @@ body {
 }
 
 .university {
+  margin-top: 20px;
   margin-bottom: 15px;
 
   font-size: 16px;
   font-weight: 700;
 }
+
 .university-management {
   font-size: 14px;
   font-weight: 700;
