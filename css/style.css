@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --mainBg: #dfdde0;
+  --sidebarBg: #373737;
+  --white: #ffffff;
+  --gray: #a8a8a8;
+  --secondary: #595959;
+  --accent: #ff6b08;
+}
+
 body {
   padding-top: 30px;
   margin: 0;
@@ -17,6 +26,15 @@ body {
   line-height: 24px;
 }
 
+a {
+  color: inherit;
+  text-decoration-color: var(--gray);
+}
+
+a:hover {
+  text-decoration-color: inherit;
+}
+
 .wrapper {
   display: flex;
   width: 1150px;
@@ -25,7 +43,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background: #dfdde0;
+  background: var(--mainBg);
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -36,8 +54,8 @@ body {
 
   padding-top: 40px;
 
-  background: #373737;
-  color: #fff;
+  background: var(--sidebarBg);
+  color: var(--white);
 }
 
 .sidebar-container {
@@ -45,7 +63,7 @@ body {
   margin-top: 55px;
   margin-right: 5px;
 
-  color: #fff;
+  color: var(--white);
 }
 
 .sidebar-photo {
@@ -70,13 +88,6 @@ body {
   margin-bottom: 10px;
 }
 
-.contacts-icon {
-  height: 1rem;
-  width: 20px;
-
-  fill: #fff;
-}
-
 .sidebar-title {
   margin-bottom: 20px;
 
@@ -86,7 +97,7 @@ body {
 }
 
 .sidebar-link {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .skills-title {
@@ -98,18 +109,14 @@ body {
 }
 
 .skills-item {
-  color: #ff6b08;
+  color: var(--accent);
 }
 
 .skills-text {
-  color: #fff;
+  color: var(--white);
 }
 
 /* main */
-
-.profession {
-  margin-bottom: 23;
-}
 
 .name {
   font-size: 45px;
@@ -125,18 +132,6 @@ body {
   margin-top: 5px;
 }
 
-.projects-title {
-  margin-bottom: 12px;
-
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.projects-link {
-  color: #595959;
-}
-
 .projects-code {
   height: 1.5rem;
 
@@ -150,32 +145,13 @@ body {
   padding-left: 3px;
   padding-right: 3px;
 
-  border: 1px solid #595959;
+  border: 1px solid var(--secondary);
 }
 
-.dots {
-  flex: 1 0;
-  min-width: 10px;
+.projects-description {
+  margin-right: 40px;
 
-  margin: 0 0.4em;
-  border-bottom: 1px dotted #bebebe;
-  font-weight: 100;
-}
-
-.about-me-title {
-  font-weight: 700;
-}
-
-.project-containet {
-  margin-bottom: 55px;
-}
-
-.profession-title {
-  margin-top: 10px;
-  margin-bottom: 15px;
-
-  font-size: 16px;
-  font-weight: 700;
+  color: var(--secondary);
 }
 
 .projects-item {
@@ -183,12 +159,28 @@ body {
   justify-content: space-between;
 }
 
-.profession-time {
-  color: #a8a8a8;
+.dots {
+  flex: 1 0;
+  min-width: 10px;
+  height: 1.35rem;
+
+  margin: 0 0.4em;
+  border-bottom: 1px dotted var(--gray);
+  font-weight: 100;
 }
 
-.profession-divider {
-  color: #000000;
+.project-container {
+  margin-bottom: 40px;
+}
+
+.profession-title {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+}
+
+.profession-time {
+  color: #a8a8a8;
 }
 
 .profession-duties {
@@ -197,27 +189,15 @@ body {
 }
 
 .profession-duties-item {
-  color: #595959;
+  color: var(--secondary);
 }
 
-.education {
-  margin-bottom: 20px;
-  margin-top: 55px;
-
-  font-size: 22px;
-  font-weight: 700;
+.about-me-title {
+  margin-bottom: 40px;
 }
 
 .university {
-  margin-top: 20px;
   margin-bottom: 15px;
 
   font-size: 16px;
-  font-weight: 700;
-}
-
-.university-management {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 15px;
 }
