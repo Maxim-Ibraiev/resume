@@ -149,6 +149,8 @@ a:hover {
 }
 
 .projects-description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-right: 40px;
 
   color: var(--secondary);
