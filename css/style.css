@@ -5,12 +5,12 @@
 }
 
 :root {
-  --mainBg: #dfdde0;
-  --sidebarBg: #373737;
+  --mainBg: #d4e1e6;
+  --sidebarBg: #1e3c50;
   --white: #ffffff;
   --gray: #a8a8a8;
   --secondary: #595959;
-  --accent: #ff6b08;
+  --accent: #08ffee;
 }
 
 body {
@@ -173,6 +173,10 @@ a:hover {
 
 .project-container {
   margin-bottom: 40px;
+}
+
+.profession {
+  margin-left: 30px;
 }
 
 .profession-title {
